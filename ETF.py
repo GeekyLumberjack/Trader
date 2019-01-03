@@ -86,14 +86,14 @@ def etftrade(etf):
                     traded = etf + ' ended trade ' + nxtdate + " " + nxtprice + " Yes"
                     print(traded)
                     #file = open("trades.txt","w")
-                    file.write(traded)
+                    file.write(traded + "\n")
                     #file.close
                 if chng <= -15:
                     trade = False
                     traded = etf + ' ended trade ' + nxtdate + " " + nxtprice + " No"
                     print(traded)
                     #file = open("trades.txt","w")
-                    file.write(traded)
+                    file.write(traded + "\n")
                    #file.close
             if trade == False:
                 if chng >= 15:
@@ -105,12 +105,12 @@ def etftrade(etf):
                         traded = etf + ' started trade ' + st
                         print(traded)
                         #file = open("trades.txt","w")
-                        file.write(traded)
+                        file.write(traded + "\n")
                         #file.close
                         trade = True
-                        ## need to figure out a good way to set the new strdate and strprice to the st that was returned from stabalize
-                        strdate = nxtdate
-                        strprice = nxtprice
+                        dateprice = st.split()
+                        strdate = dateprice[1] + dateprice[2] + dateprice[3]
+                        strprice = dateprice[4]
         i = i -1
 
 for e in listE:
