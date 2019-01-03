@@ -1,11 +1,11 @@
 TUR started trade Oct 06, 2008 32.80
-TUR ended trade Oct 16, 2008 25.44 No
+TUR ended trade Oct 16, 2008 25.44 No **With stabalize rule trade would not have taken place**
 TUR started trade Nov 19, 2008 19.06
 TUR ended trade Nov 28, 2008 25.13 Yes
 TUR started trade Nov 25, 2011 40.57
 TUR ended trade Apr 02, 2012 52.76 Yes
 TUR started trade Jan 23, 2014 42.44
-TUR ended trade May 08, 2014 55.18 Yes
+TUR ended trade May 08, 2014 55.18 Yes **With stabalize rule trade would not have taken place**
 TUR started trade Nov 14, 2016 33.03
 TUR ended trade Jul 14, 2017 42.97 Yes
 TUR started trade Aug 06, 2018 24.90
