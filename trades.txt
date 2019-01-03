@@ -1,0 +1,75 @@
+TUR started trade Oct 06, 2008 32.80
+TUR ended trade Oct 16, 2008 25.44 No
+TUR started trade Nov 19, 2008 19.06
+TUR ended trade Nov 28, 2008 25.13 Yes
+TUR started trade Nov 25, 2011 40.57
+TUR ended trade Apr 02, 2012 52.76 Yes
+TUR started trade Jan 23, 2014 42.44
+TUR ended trade May 08, 2014 55.18 Yes
+TUR started trade Nov 14, 2016 33.03
+TUR ended trade Jul 14, 2017 42.97 Yes
+TUR started trade Aug 06, 2018 24.90
+TUR ended trade Aug 10, 2018 19.65 No
+EGPT started trade Sep 15, 2011 48.44
+EGPT ended trade Nov 21, 2011 41.08 No
+EGPT started trade Aug 20, 2015 40.60
+EGPT ended trade Jan 13, 2016 33.60 No
+EWZ started trade Sep 17, 2008 52.86
+EWZ ended trade Oct 06, 2008 37.67 No
+EWZ started trade Jun 19, 2013 45.22
+EWZ ended trade Feb 03, 2014 38.00 No
+EWZ started trade Mar 09, 2015 30.74
+EWZ ended trade Aug 17, 2015 26.08 No
+EWZ started trade Jan 14, 2016 18.41
+EWZ ended trade Mar 04, 2016 24.59 Yes
+EWJ started trade Feb 20, 2009 29.88
+EWJ ended trade Jul 30, 2009 39.24 Yes
+EWY started trade Oct 06, 2008 32.33
+EWY ended trade Oct 10, 2008 27.26 No
+EWY started trade Nov 20, 2008 19.00
+EWY ended trade Dec 08, 2008 24.86 Yes
+EWG started trade Oct 09, 2008 18.15
+EWG ended trade Oct 24, 2008 14.75 No
+EWG started trade Sep 23, 2011 17.15
+EWG ended trade Oct 28, 2011 22.39 Yes
+EWA started trade Oct 06, 2008 16.39
+EWA ended trade Oct 10, 2008 13.14 No
+EWC started trade Oct 06, 2008 20.67
+EWC ended trade Oct 16, 2008 17.40 No
+EWC started trade Jan 14, 2016 19.16
+EWC ended trade Apr 20, 2016 24.91 Yes
+EWH started trade Oct 09, 2008 10.58
+EWH ended trade Oct 27, 2008 8.70 No
+EWT started trade Oct 06, 2008 18.46
+EWT ended trade Oct 23, 2008 15.50 No
+EPOL started trade Sep 22, 2011 22.50
+EPOL ended trade Dec 19, 2012 29.34 Yes
+EPOL started trade Dec 09, 2015 17.31
+EPOL ended trade Apr 24, 2017 22.82 Yes
+EWP started trade Oct 10, 2008 34.09
+EWP ended trade Nov 20, 2008 28.63 No
+EWP started trade Apr 05, 2012 27.00
+EWP ended trade May 17, 2012 22.87 No
+EWP started trade Jan 20, 2016 24.54
+EWP ended trade Apr 25, 2017 32.13 Yes
+GREK started trade May 23, 2012 9.91
+GREK ended trade Sep 06, 2012 12.95 Yes
+GREK started trade Dec 11, 2014 13.56
+GREK ended trade Jan 28, 2015 10.63 No
+GREK started trade Aug 24, 2015 8.13
+GREK ended trade Oct 23, 2015 10.59 Yes
+GREK started trade Jan 20, 2016 6.35
+GREK ended trade May 10, 2016 8.45 Yes
+GREK started trade Dec 28, 2018 6.77
+EZA started trade Oct 10, 2008 32.00
+EZA ended trade Oct 22, 2008 25.71 No
+EZA started trade May 06, 2010 23.00
+EZA ended trade May 07, 2010 53.00 Yes
+EZA started trade Dec 11, 2015 42.45
+EZA ended trade Apr 19, 2016 55.43 Yes
+EWK started trade Sep 29, 2008 12.63
+EWK ended trade Oct 08, 2008 10.26 No
+EWK started trade Nov 20, 2008 7.12
+EWK ended trade May 04, 2009 9.30 Yes
+VNM started trade Aug 04, 2011 17.78
+VNM ended trade Dec 23, 2011 15.00 No
