@@ -109,7 +109,7 @@ def etftrade(etf):
                         #file.close
                         trade = True
                         dateprice = st.split()
-                        strdate = dateprice[1] + dateprice[2] + dateprice[3]
+                        strdate = dateprice[1] + " " + dateprice[2] + " " + dateprice[3]
                         strprice = dateprice[4]
         i = i -1
 
