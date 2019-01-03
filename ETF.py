@@ -20,6 +20,21 @@ listE =['TUR','EGPT', 'EWZ', 'EWJ', 'EWY', 'EWG', 'EWA', 'EWC', 'EWH', 'EWT', 'E
 driver = webdriver.Chrome('C:\Python27\chromedriver.exe')
 wait = WebDriverWait(driver, 20)
 file = open("trades.txt","w")
+
+def stabalize(nxt, i):
+    stchng = float(nxt) * .05
+    x = i - 1
+    stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[4]/span').get_attribute('innerHTML')
+    while x > x - 5:
+        if float(strprice) < nxt - stchng:
+            return "Not Stable"
+        elif float(strprice) > nxt + stchng:
+            return "Not Stable"
+        x = x - 1
+        stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[4]/span').get_attribute('innerHTML')
+        stdate = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[1]/span').get_attribute('innerHTML')    
+    return stdate + " " + stprice
+
 def etftrade(etf):
     driver.get("https://finance.yahoo.com/quote/" + etf + "/history?period1=1206680400&period2=1546063200&interval=1d&filter=history&frequency=1d")
     ele = driver.find_element_by_css_selector('tr.Fz\(s\):nth-child(1)')
@@ -85,14 +100,17 @@ def etftrade(etf):
                     strdate = nxtdate
                     strprice = nxtprice
                 if chng <= -40:
-                    traded = etf + ' started trade ' + nxtdate + " " + nxtprice
-                    print(traded)
-                    #file = open("trades.txt","w")
-                    file.write(traded)
-                    #file.close
-                    trade = True
-                    strdate = nxtdate
-                    strprice = nxtprice
+                    st = stabalize(nxtprice, i)
+                    if st != "Not Stable":
+                        traded = etf + ' started trade ' + st
+                        print(traded)
+                        #file = open("trades.txt","w")
+                        file.write(traded)
+                        #file.close
+                        trade = True
+                        ## need to figure out a good way to set the new strdate and strprice to the st that was returned from stabalize
+                        strdate = nxtdate
+                        strprice = nxtprice
         i = i -1
 
 for e in listE:
