@@ -22,18 +22,32 @@ wait = WebDriverWait(driver, 20)
 file = open("trades.txt","w")
 
 def stabalize(nxt, i):
+    print("stabalize")
     stchng = float(nxt) * .05
     x = i - 1
-    stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[4]/span').get_attribute('innerHTML')
-    while x > x - 5:
-        if float(strprice) < nxt - stchng:
+    stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(chkele(x)) + ']/td[4]/span').get_attribute('innerHTML')
+    while x > x - 5 and x > 0:
+        if float(stprice) < float(nxt) - stchng:
             return "Not Stable"
-        elif float(strprice) > nxt + stchng:
+        if float(stprice) > float(nxt) + stchng:
             return "Not Stable"
         x = x - 1
-        stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[4]/span').get_attribute('innerHTML')
-        stdate = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(x) + ']/td[1]/span').get_attribute('innerHTML')    
+        stprice = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(chkele(x)) + ']/td[4]/span').get_attribute('innerHTML')
+        stdate = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr[' + str(chkele(x)) + ']/td[1]/span').get_attribute('innerHTML')    
     return stdate + " " + stprice
+
+def chkele(i):
+    if i == 0:
+        return 1
+    chk = driver.find_element_by_xpath('/html/body/div[1]/div/div/div[1]/div/div[3]/div[1]/div/div[2]/div/div/section/div[2]/table/tbody/tr['+ str(i) + ']').get_attribute('innerText')
+    if "Dividend" in chk:
+        i = i -1
+        return i
+    elif "Stock Split" in chk:
+        i = i -1
+        return i
+    else:
+        return i
 
 def etftrade(etf):
     driver.get("https://finance.yahoo.com/quote/" + etf + "/history?period1=1206680400&period2=1546063200&interval=1d&filter=history&frequency=1d")
@@ -101,6 +115,7 @@ def etftrade(etf):
                     strprice = nxtprice
                 if chng <= -40:
                     st = stabalize(nxtprice, i)
+                    print(st)
                     if st != "Not Stable":
                         traded = etf + ' started trade ' + st
                         print(traded)
